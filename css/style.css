@@ -1346,6 +1346,7 @@ code.fly-tag {
     margin-left: 0;
     font-size: 30px;
     margin-bottom: 50px;
+    padding-right: 0;
   }
 
   .main-block__features-list {
