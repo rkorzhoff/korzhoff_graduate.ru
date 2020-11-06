@@ -638,6 +638,10 @@ code.fly-tag {
   align-items: center;
 }
 
+.copyright-text small {
+  font-size: 16px;
+}
+
 .main-block__about-me {
   position: relative;
 }
@@ -1778,7 +1782,7 @@ code.fly-tag {
 
   .copyright {
     padding-top: 18px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .slick-dots button {
