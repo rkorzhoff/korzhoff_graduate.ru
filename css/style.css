@@ -949,7 +949,8 @@ transform: scale(1.1);
   .mob-navlist {
     width: 100%;
     text-align: center;
-    padding-bottom: 10px;
+    border: 4px solid #f82370;
+    border-radius: 5px;
   }
 
   .mob-navlink {
