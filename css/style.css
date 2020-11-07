@@ -1300,6 +1300,11 @@ transform: scale(1.1);
     transform: translateX(-20px);
   }
 
+  .mob-form_open-popup:focus {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
+
   .request-form__tel {
     font-size: 18px;
   }
