@@ -15,33 +15,30 @@
 <body class="body">
 
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <div class="hamburger-menu">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
+        <div class="line line-1 x-line1"></div>
+        <div class="line line-2 x-line2"></div>
+        <div class="line line-3 x-line3"></div>
       </div>
       <nav class="nav-menu scrollto">
         <ul class="nav-menu__list">
-          <li class="nav-menu__list-item"><a href="#features-list">Услуги</a></li>
-          <li class="nav-menu__list-item"><a href="#portfolio">Портфолио</a></li>
-          <li class="nav-menu__list-item"><a href="#price-time">Стоимость</a></li>
+          <li class="nav-menu__list-item"><a class="nav-menu__link" href="#features-list">Услуги</a></li>
+          <li class="nav-menu__list-item"><a class="nav-menu__link" href="#portfolio">Портфолио</a></li>
+          <li class="nav-menu__list-item"><a class="nav-menu__link" href="#price-time">Стоимость</a></li>
         </ul>
       </nav>
-
       <nav class="mob-navbar scrollto">
-
         <ul class="mob-navlist">
           <li class="nav-item"><a href="#features-list" class="mob-navlink">Услуги</a></li>
           <li class="nav-item"><a href="#portfolio" class="mob-navlink">Портфолио</a></li>
           <li class="nav-item"><a href="#price-time" class="mob-navlink">Стоимость</a></li>
         </ul>
       </nav>
-
       <div class="request-form__buttons">
-        <span class="request-form__tel"><a href="tel:+74999955577">+7 (499) 995-55-77</a></span>
+        <span class="request-form__tel header__tel"><a class="request-form__link" href="tel:+74999955577">+7 (499) 995-55-77</a></span>
         <button class="request-form__request-callback open-popup">Заказать звонок</button>
-        <button class="mob-form__request-callback open-popup"></button>
+        <button class="mob-form__request-callback open-popup mob-form_open-popup"></button>
       </div>
     </div>
   </header>
@@ -56,85 +53,85 @@
         <code class="fly-tag fly-tag4">#</code>
         <code class="fly-tag fly-tag5">{ }</code>
       </div>
-
-      <div class="container">
-        <div class="top-background">
-          <picture>
-            <source srcset="img/photobg.png" media="(max-width: 328px)">
-            <img src="/img/photobg.png" alt="top-background">
-          </picture>
-        </div>
+      <div class="top-background">
+        <picture>
+          <source srcset="img/photobg.png" media="(max-width: 992px)">
+          <source srcset="img/photobg_mob.png" media="(max-width: 360px)">  
+          <img class="top-background__img" src="/img/photobg_photo.png" alt="top-background">
+        </picture>
+      </div>
+      <div class="container about-me__container">
         <div class="about-me__main-part">
           <h1 class="about-me__name">Роберт Коржов</h1>
           <p class="about-me__description">Frontend-разработчик и веб-верстальщик</p>
-          <button class="learn-more-button open-popup">Узнать больше</button>
+          <button class="learn-more-button open-popup about-me__btn">Узнать больше</button>
         </div>
       </div>
     </section>
 
     <section class="main-block__features" id="features-list">
-      <div class="container">
+      <div class="container features__container">
         <h2 class="main-block__features-header">Что я делаю</h2>
         <ul class="main-block__features-list">
           <li class="main-block__features-item features-item__first">
-            <p>Вёрстка лендинг-страниц и сайтов любой сложности</p>
+            <p class="featuers-item__text">Вёрстка лендинг-страниц и сайтов любой сложности</p>
           </li>
           <li class="main-block__features-item features-item__second">
-            <p>Адаптивная вёрстка под все браузеры и устройства</p>
+            <p class="featuers-item__text features-item__text-second">Адаптивная вёрстка под все браузеры и устройства</p>
           </li>
           <li class="main-block__features-item features-item__third">
-            <p>Frontend–разработка и программирование</p>
+            <p class="featuers-item__text features-item__text-third">Frontend–разработка и программирование</p>
           </li>
           <li class="main-block__features-item features-item__fourth">
-            <p>Исправление и доработка существующей вёрстки</p>
+            <p class="featuers-item__text">Исправление и доработка существующей вёрстки</p>
           </li>
         </ul>
-        <button class="learn-more-button open-popup">Узнать стоимость</button>
+        <button class="learn-more-button open-popup features__learn-button">Узнать стоимость</button>
       </div>
     </section>
     <section class="main-block__slider" id="portfolio">
-      <div class="container">
+      <div class="container slider__container">
         <h2 class="slider-header">Примеры моих работ</h2>
         <div class="slider-container">
           <ul class="slider-track">
             <li class="slider-item slider-item__first">
-              <div class="slider-item__content"><a href="#"><img src="/img/site-1.png" alt="slider-item__content">
-                  <p>Сайт психолога Веры Антоновой</p>
+              <div class="slider-item__content"><a href="#" class="slider-item__link"><img class="slick-item__img" src="/img/site-1.png" alt="slider-item__content">
+                  <p class="slider-item__text">Сайт психолога Веры Антоновой</p>
                 </a>
               </div>
             </li>
             <li class="slider-item slider-item__second">
-              <div class="slider-item__content"><a href="#"><img src="/img/site-2.png" alt="slider-item__content">
-                  <p>Сайт магазина детской одежды</p>
+              <div class="slider-item__content"><a href="#" class="slider-item__link"><img class="slick-item__img" src="/img/site-2.png" alt="slider-item__content">
+                  <p class="slider-item__text">Сайт магазина детской одежды</p>
                 </a>
               </div>
             </li>
             <li class="slider-item slider-item__third">
-              <div class="slider-item__content"><a href="#"><img src="/img/site-3.png" alt="slider-item__content">
-                  <p>Сайт магазина «Рыболов»</p>
+              <div class="slider-item__content"><a href="#" class="slider-item__link"><img class="slick-item__img" src="/img/site-3.png" alt="slider-item__content">
+                  <p class="slider-item__text">Сайт магазина «Рыболов»</p>
                 </a>
               </div>
             </li>
             <li class="slider-item slider-item__fourth">
-              <div class="slider-item__content"><a href="#"><img src="/img/site-4.png" alt="slider-item__content">
-                  <p>Сайт о программировании</p>
+              <div class="slider-item__content"><a href="#" class="slider-item__link"><img class="slick-item__img" src="/img/site-4.png" alt="slider-item__content">
+                  <p class="slider-item__text">Сайт о программировании</p>
                 </a>
               </div>
           </ul>
         </div>
-        <button class="learn-more-button open-popup">Заказать проект</button>
+        <button class="learn-more-button open-popup slider__learn-button">Заказать проект</button>
       </div>
     </section>
 
     <section class="main-block__price-time" id="price-time">
       <div class="price-time__fly-tag">
-        <code class="sec-fly-tag sec-fly-tag1">&lt;div&gt;</code>
-        <code class="sec-fly-tag sec-fly-tag2">&lt;/&gt;</code>
-        <code class="sec-fly-tag sec-fly-tag3">#</code>
-        <code class="sec-fly-tag sec-fly-tag4">{ }</code>
-        <code class="sec-fly-tag sec-fly-tag5">{ }</code>
+        <code class="flyTag__price flyTag__price1">&lt;div&gt;</code>
+        <code class="flyTag__price flyTag__price2">&lt;/&gt;</code>
+        <code class="flyTag__price flyTag__price3">#</code>
+        <code class="flyTag__price flyTag__price4">{ }</code>
+        <code class="flyTag__price flyTag__price5">{ }</code>
       </div>
-      <div class="container">
+      <div class="container price-time__container">
         <h2 class="main-block__price-description"> Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
         <p class="main-block__time-description">* Сроки и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</p>
       </div>
@@ -142,30 +139,30 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <nav class="scrollto">
         <ul class="footer-nav">
-          <li class="footer-nav__item"><a href="#features-list">Услуги</a></li>
-          <li class="footer-nav__item"><a href="#portfolio">Портфолио</a></li>
-          <li class="footer-nav__item"><a href="#price-time">Стоимость</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#features-list">Услуги</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#portfolio">Портфолио</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#price-time">Стоимость</a></li>
         </ul>
       </nav>
       <div class="footer-contacts">
-        <a href="tel:+74999957755" class="request-form__tel"><i class="fas fa-phone-alt"></i>+7 (499) 995-77-55</a>
-        <a href="mailto:r.korzhoff@gmail.com" class="request-form__email"><i class="fas fa-envelope"></i>r.korzhoff@gmail.com</a>
+        <a href="tel:+74999957755" class="request-form__tel footer__contact footer__tel"><i class="fas fa-phone-alt"></i>+7 (499) 995-77-55</a>
+        <a href="mailto:r.korzhoff@gmail.com" class="request-form__email footer__contact footer__email"><i class="fas fa-envelope"></i>r.korzhoff@gmail.com</a>
       </div>
       <div class="footer-links">
-        <button class="request-form__request-callback open-popup">Заказать звонок</button>
+        <button class="request-form__request-callback open-popup footer__request-btn">Заказать звонок</button>
         <ul class="footer-links__socials">
-          <li><a href="https://vk.com" class="vk" target="_blank"></a></li>
-          <li><a href="https://facebook.com" class="fb" target="_blank"></a></li>
-          <li><a href="https://twitter.com" class="twitter" target="_blank"></a></li>
-          <li><a href="https://instagram.com" class="ig" target="_blank"></a></li>
+          <li class="footer-links__item"><a href="https://vk.com" class="footer-links__link vk" target="_blank"></a></li>
+          <li class="footer-links__item"><a href="https://facebook.com" class="footer-links__link fb" target="_blank"></a></li>
+          <li class="footer-links__item"><a href="https://twitter.com" class="footer-links__link twitter" target="_blank"></a></li>
+          <li class="footer-links__item"><a href="https://instagram.com" class="footer-links__link ig" target="_blank"></a></li>
         </ul>
       </div>
     </div>
     <div class="copyright">
-      <p class="copyright-text"><small>© Роберт Коржов, 2020</small></p>
+      <p class="copyright-text"><small class="copyright-text__small">© Роберт Коржов, 2020</small></p>
     </div>
     <!-- FORM -->
     <div class="popup-fade">
@@ -191,7 +188,7 @@
     </div>
     <div class="overlay js-overlay-thank-you">
       <div class="overlay__popup js-thank-you">
-        <h2>Спасибо за заявку!</h2>
+        <h2 class="overlay__popup--header">Спасибо за заявку!</h2>
         <div class="close-popup js-close-thank-you"></div>
       </div>
     </div>
