@@ -201,6 +201,7 @@ code.fly-tag {
   height: 25px;
   margin-top: 5px;
   padding: 15px;
+  background-color: #f6f6f6;
 }
 
 .form__block {
@@ -210,7 +211,6 @@ code.fly-tag {
 
 .form__label {
   text-align: left;
-
 }
 
 .form-button {
@@ -224,9 +224,9 @@ code.fly-tag {
 }
 
 .form-button:hover {
-  background-color: #f82370;
+  background-color: rgb(255, 78, 46);
   color: #ffffff;
-  transition: .5s;
+  transition: .3s;
 }
 
 .popup__header {
@@ -296,12 +296,15 @@ code.fly-tag {
 
 .request-form__tel a:hover,
 .request-form__email a:hover,
-.footer-nav__item a:hover {
+.footer-nav__item a:hover,
+.footer-contacts a:hover {
   color: #f82370;
   border-bottom: 1px solid #f82370;
   transition: .3s;
 }
-
+.footer-contacts a:hover {
+  border-bottom: none;
+}
 .request-form__request-callback {
   border: 1px solid #f82370;
   background: #fbfbfb;
@@ -314,22 +317,30 @@ code.fly-tag {
 .footer-links .request-form__request-callback:hover {
   background: #ff4e2e;
   color: #fff;
-  transition: .5s;
+  transition: .3s;
 }
 
 .main-block__about-me {
-  background:
-    url("/img/photo.png") no-repeat top -116% right 15%,
-    url("/img/Ellipse.png") no-repeat top -94% right -10.5%;
   background-color: #fbfbfb;
   padding-top: 161px;
   position: relative;
   padding-bottom: 237px;
 }
 
+.top-background {
+  z-index: 0;
+}
+.top-background img {
+  max-width: 975px;
+  top: 5%;
+  right: -70px;
+  position: absolute;
+}
+
 .about-me__main-part {
   display: flex;
   flex-wrap: wrap;
+  order: -1;
 }
 
 .about-me__name {
@@ -362,7 +373,7 @@ code.fly-tag {
   border: 1px solid #f82370;
   background: #fbfbfb;
   color: #f53f4f;
-  transition: .5s;
+  transition: .3s;
 }
 
 .main-block__features {
@@ -728,7 +739,6 @@ code.fly-tag {
 .mob-navbar,
 .toggle-on__br,
 .slider-buttons__prev:last-child,
-.top-background,
 .fly-tag2-1024,
 .mob-form__request-callback {
   display: none;
@@ -746,6 +756,12 @@ code.fly-tag {
   position: absolute;
   top: calc(50% - 55px);
   z-index: 10;
+  transition: .3s;
+}
+
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-next:hover {
+  box-shadow: 0 0 20px #000000;
 }
 
 .slick-arrow.slick-prev {
@@ -944,8 +960,6 @@ code.fly-tag {
   }
 
   .main-block__about-me {
-    background: url("../img/photo.png") no-repeat top 2.5vw right -5.3vw,
-      url("../img/Ellipse1.png") no-repeat bottom -8.3vw right -34vw;
     background-color: #fbfbfb;
     padding-bottom: 228px;
   }
