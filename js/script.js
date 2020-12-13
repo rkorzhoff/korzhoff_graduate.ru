@@ -137,6 +137,9 @@ $(function () {
       phone: {
         required: "Поле 'Номер телефона' обязательно к заполнению",
         phone: "Введите корректный номер телефона"
+      },
+      text: {
+        required: "Поле 'Ваше имя' обязательно к заполнению"
       }
     }
   });
@@ -145,7 +148,7 @@ $(function () {
 // Отправка заявки 
 $(document).ready(function () {
   $('#form').submit(function () { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-    if (document.form.name.value == '' || document.form.phone.value == '' || document.form.email.value == '' || !document.form.email.value.includes('@')) {
+    if (document.form.name.value == '' || document.form.phone.value == '' || document.form.email.value == '' || document.form.text.value == '' || !document.form.email.value.includes('@')) {
       valid = false;
       return valid;
     }
@@ -180,7 +183,3 @@ $(document).mouseup(function (e) { // по клику вне попапа
 $(function ($) {
   $('[name="phone"]').mask("+7(999) 999-9999");
 });
-
-// $(document).ready(function(){   
-//     $("#email").inputmask("email")
-// });

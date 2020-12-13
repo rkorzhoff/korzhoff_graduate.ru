@@ -36,8 +36,8 @@
         </ul>
       </nav>
       <div class="request-form__buttons">
-        <span class="request-form__tel header__tel"><a class="request-form__link" href="tel:+74999955577">+7 (499) 995-55-77</a></span>
-        <button class="request-form__request-callback open-popup">Заказать звонок</button>
+        <span class="request-form__tel header__tel"><i class="fab fa-telegram"></i><a class="request-form__link" href="tg://resolve?domain=@r_korzhoff">@r_korzhoff</a></span>
+        <button class="request-form__request-callback open-popup">Обратная связь</button>
         <button class="mob-form__request-callback open-popup mob-form_open-popup"></button>
       </div>
     </div>
@@ -56,7 +56,7 @@
       <div class="top-background">
         <picture>
           <source srcset="img/photobg.png" media="(max-width: 992px)">
-          <source srcset="img/photobg_mob.png" media="(max-width: 360px)">  
+          <source srcset="img/photobg_mob.png" media="(max-width: 360px)">
           <img class="top-background__img" src="/img/photobg_photo.png" alt="top-background">
         </picture>
       </div>
@@ -92,6 +92,7 @@
     <section class="main-block__slider" id="portfolio">
       <div class="container slider__container">
         <h2 class="slider-header">Примеры моих работ</h2>
+        <h2 class="ex-header">Интеграция slick-slider</h2>
         <div class="slider-container">
           <ul class="slider-track">
             <li class="slider-item slider-item__first">
@@ -148,16 +149,16 @@
         </ul>
       </nav>
       <div class="footer-contacts">
-        <a href="tel:+74999957755" class="request-form__tel footer__contact footer__tel"><i class="fas fa-phone-alt"></i>+7 (499) 995-77-55</a>
+        <a href="tg://resolve?domain=@r_korzhoff" class="request-form__tel footer__contact footer__tel"><i class="fab fa-telegram"></i>@r_korzhoff</a>
         <a href="mailto:r.korzhoff@gmail.com" class="request-form__email footer__contact footer__email"><i class="fas fa-envelope"></i>r.korzhoff@gmail.com</a>
       </div>
       <div class="footer-links">
         <button class="request-form__request-callback open-popup footer__request-btn">Заказать звонок</button>
         <ul class="footer-links__socials">
-          <li class="footer-links__item"><a href="https://vk.com" class="footer-links__link vk" target="_blank"></a></li>
-          <li class="footer-links__item"><a href="https://facebook.com" class="footer-links__link fb" target="_blank"></a></li>
-          <li class="footer-links__item"><a href="https://twitter.com" class="footer-links__link twitter" target="_blank"></a></li>
-          <li class="footer-links__item"><a href="https://instagram.com" class="footer-links__link ig" target="_blank"></a></li>
+          <li class="footer-links__item"><a href="https://vk.com/robert.korzhov" class="footer-links__link vk" target="_blank"></a></li>
+          <!-- <li class="footer-links__item"><a href="https://facebook.com" class="footer-links__link fb" target="_blank"></a></li>
+          <li class="footer-links__item"><a href="https://twitter.com" class="footer-links__link twitter" target="_blank"></a></li> -->
+          <li class="footer-links__item"><a href="https://www.instagram.com/r_korzhoff/" class="footer-links__link ig" target="_blank"></a></li>
         </ul>
       </div>
     </div>
@@ -168,7 +169,7 @@
     <div class="popup-fade">
       <div class="popup">
         <a class="popup-close" href="#">X</a>
-        <h2 class="popup__header">Заказать звонок</h2>
+        <h2 class="popup__header">Обратная связь</h2>
         <form class="form" id="form" name="form">
           <div class="form__block">
             <label for="name" class="form__label">Ваше имя</label>
@@ -181,6 +182,10 @@
           <div class="form__block">
             <label for="email" class="form__label">Ваш Email</label>
             <input type="text" class="form-field" id="email" name="email" placeholder="mail@example.com">
+          </div>
+          <div class="form__block">
+            <label for="Text" class="form__label">Ваше сообщение</label>
+            <input type="text" class="form-field" id="text" name="text" placeholder="Ваше сообщение">
           </div>
           <button class="form-button"><span class="text-button">Отправить заявку</span></button>
         </form>
@@ -195,11 +200,9 @@
     <!-- FORM END -->
   </footer>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
-    integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous">
   </script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="/js/jquery-validation/dist/jquery.validate.js"></script>
   <script src="/js/slick.min.js"></script>
   <script src="/js/script.js"></script>
